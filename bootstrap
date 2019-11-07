@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while true; do
+  export PERL5LIB="$LAMBDA_TASK_ROOT/perl-5.26.1/lib/5.26.1:$LAMBDA_TASK_ROOT/perl-5.26.1/lib/site_perl/5.26.1"
+  $LAMBDA_TASK_ROOT/perl-5.26.1/bin/perl hello.pl
+done
